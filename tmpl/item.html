@@ -1,0 +1,7 @@
+{{define "item"}}
+<h1 class="page__title">{{.Title}}</h1>
+
+<p>[<a class="page__link page__link--edit" href="/edit/{{.Title}}">edit</a>]<p>
+
+<div class="page__content" >{{printf "%s" .Body}}</div>
+{{end}}
