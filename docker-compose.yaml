@@ -1,0 +1,12 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - app-data:/app/data  # Mount a Docker volume for data persistence
+
+volumes:
+  app-data:  # Define the Docker volume
